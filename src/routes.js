@@ -1,15 +1,13 @@
 const express = require("express")
-
+const path = require("path")
 const router = express.Router()
 
 router.get('/', (req, res) => {
-  res.send('Hello World!')
+  res.sendFile(path.join(__dirname, 'public', 'login.html'))
 })
 
 router.get('/inicio', (req, res) => {
-  res.send('esse é o inicio')
+  res.sendFile(path.join(__dirname, 'public', 'inicio.html'))
 })
 
-
-module.exports = router 
-
+module.exports = router

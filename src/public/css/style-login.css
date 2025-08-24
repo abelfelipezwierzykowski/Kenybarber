@@ -1,0 +1,116 @@
+       :root{
+        --cor-fundo: #111111;
+        --cor-container: #000000;
+        --cor-botoes: #c6a24d;
+
+        --letras-login-placeholder: #f1f1f1;
+        --cor-sombra: #c6a24d;
+        --borda-placeholder: #444;
+
+        --hoover-botao-entrar: #654e1a;
+       } 
+        
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: var(--cor-fundo);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: var(--letras-login-placeholder);
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 360px; 
+            text-align: center;
+            background: var(--cor-container);
+            padding: 30px 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px var(--cor-sombra);
+        }
+
+        .logo {
+            max-width: 180px;
+            width: 125px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        input {
+            width: 100%;
+            padding: 14px 20px;
+            margin: 10px 0;
+            color: var(--letras-login-placeholder);
+            border-radius: 25px;
+            border: 1px solid var(--borda-placeholder);
+            background-color: transparent;
+            font-size: 16px;
+            text-align: center;
+            transition: border-color 0.3s;
+        }
+
+        input::placeholder {
+            color: var(--letras-login-placeholder);
+        }
+
+        input:focus {
+            outline: none;
+            border-color: var(--cor-botoes);
+        }
+
+        button {
+            display: block;
+            margin: 20px auto 0 auto; 
+            padding: 14px 40px;
+            max-width: 200px; 
+            width: 100%;
+            border: none;
+            border-radius: 25px;
+            background-color: var( --cor-botoes);
+            color: black;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background-color: var(--hoover-botao-entrar);
+        }
+
+        @media (max-width: 400px) {
+            .container {
+                padding: 25px 15px;
+                max-width: 100%;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            input {
+                font-size: 14px;
+                padding: 12px 15px;
+            }
+
+            button {
+                font-size: 16px;
+                padding: 12px 30px;
+                max-width: 100%;
+            }
+
+           
+        }
+

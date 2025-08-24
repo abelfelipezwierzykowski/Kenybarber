@@ -1,0 +1,161 @@
+:root {
+    --cor-bordas: #000000;
+    --cor-botao-pesquisar: #f1f1f1;
+    --cor-fontes-links:  #f1f1f1;
+    --hoover-links: #73192A;
+    --cor-fonte-footer: #f4c542;
+
+    --cor-fundo: linear-gradient(to top, #000000, #AD8F47);
+}
+
+
+nav {
+    padding: 0.5rem 1rem;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin-top: 80px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li:not(:first-child) {
+    margin-top: 30px;
+}
+
+nav ul li a {
+    color: var(--cor-links);
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--hoover-links);
+}
+
+.barber-pole {
+    width: 55px;
+}
+
+
+.cabecalho__pesquisar__item {
+    margin-top: 5px;
+}
+
+.form__pesquisa {
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.pesquisar__input {
+    padding: 8px;
+    border: 2px solid var(--cor-bordas);
+    border-radius: 32px 0px 0px 32px;
+    font-size: 16px;
+    width: 600px;
+}
+
+.pesquisar__btn {
+    background-color: var(--cor-botao-pesquisar);
+    border: 0;
+    border-radius: 0px 32px 32px 0px;
+    padding: 8px 15px;
+    border-left: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+input {
+    border: none;
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    font-family: inherit;
+}
+
+
+footer {
+  width: 100%;
+  background: var(--cor-fundo);
+;  color: var(--cor-fontes-links);
+  font-family: 'Judson', serif;
+}
+
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 20px;
+   font-family: 'Judson', serif;
+}
+
+
+.footer-section {
+  flex: 1 1 250px;
+  margin: 10px;
+}
+
+
+.footer h2, .footer h3 {
+  color: var(--cor-fonte-footer); 
+}
+
+
+.footer p {
+  margin: 8px 0;
+}
+
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  transition: transform 0.3s;
+}
+
+.social-icons a img {
+  width: 30px;
+  height: 30px;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+}
+
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    text-align: center;
+  }
+}
+
+
