@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kennybarber</title>
+
+  <link rel="stylesheet" href="css/style-login.css"> 
+  <link href="https://fonts.googleapis.com/css2?family=Judson:wght@400;700&display=swap" rel="stylesheet">
+
+  <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">-->
+
+  <style>
+
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #000000, #AD8F47);
+      color: #fff;
+       font-family: 'Judson', serif;
+    }
+
+    /* Carrossel */
+    .carousel-inner img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+      margin-top: 20px;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      filter: invert(1);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <ul>
+      <img class="barber-pole" src="imagem/barber-pole.png" alt="Barber-pole">
+      <li><a href="login.html">login</a></li>
+      <li><a href="link2.html">Profissionais</a></li>
+      <li><a href="link3.html">Calendário</a></li>
+      <li><a href="link4.html">Locais</a></li>
+      <li><a href="link5.html">Contato</a></li>
+      <li><a href="link6.html">Mais</a></li>
+      <li><a href="link7.html">Usuário</a></li>
+      <img class="barber-pole" src="imagem/barber-pole.png" alt="Barber-pole">
+    </ul>
+  </nav>
+
+  <div class="cabecalho__pesquisar__item">
+    <form class="form__pesquisa">
+      <input type="search" class="pesquisar__input" placeholder="Pesquisar">
+      <button class="pesquisar__btn">
+        <img src="imagem/search.png" alt="ícone de lupa">
+      </button>
+    </form>
+  </div>
+</header>
+
+<main>
+  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="imagem/carrossel2.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="imagem/carrossel3.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="imagem/carrossel4.jpg" class="d-block w-100" alt="...">
+      </div>
+<div class="carousel-item">
+        <img src="imagem/carrossel5.jpg" class="d-block w-100" alt="...">
+      </div>
+
+    </div>
+
+    
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Próximo</span>
+    </button>
+  </div>
+</main>
+
+<footer>
+      <div class="footer-container">
+
+    <div class="footer-section about">
+      <h2>Barbearia Kenybarber</h2>
+      <p>Os melhores cortes, produtos de qualidade e atendimento diferenciado. Venha nos visitar!</p>
+    </div>
+
+    <!-- Contato -->
+    <div class="footer-section contact">
+      <h3>Contato</h3>
+      <p>📍 Entre em contato com a barbearia mais perto de você!</p>
+      <p>📞 (41) 99999-9999</p>
+      <p>✉️ contato@barbeariakenybarber.com</p>
+    </div>
+
+    <!-- Redes Sociais -->
+    <div class="footer-section social">
+      <h3>Siga-nos</h3>
+      <div class="social-icons">
+        <a href="#" target="_blank"><img src="imagem/twitter-x.png" alt="X"></a>
+        <a href="#" target="_blank"><img src="imagem/instagram icon.png" alt="Instagram"></a>
+        <a href="#" target="_blank"><img src="imagem/whatsapp.png" alt="WhatsApp"></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    &copy; 2025 Barbearia Kenybarber. Todos os direitos reservados.
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
