@@ -1,20 +1,25 @@
-const express = require("express")
+const express = require("express");
+const path = require("path");
+const router = express.Router();
 
-const router = express.Router()
 
-router.get('/', (req, res) => {
-  res.send('Hello World!')
-})
+const carro = require("./carro.json");
 
-router.get('/inicio', (req, res) => {
-  res.send('esse é o inicio')
-})
+router.get("/", (req, res) => {
+  res.send("Hello World!");
+});
 
-const carro=require('./carro.json')
+router.get("/inicio", (req, res) => {
+  res.send("esse é o inicio");
+});
 
-router.get('/carro', (req, res)=>{
+router.get("/carro", (req, res) => {
   res.json(carro);
-})
+});
 
-module.exports = router 
+router.use((req, res) => {
+  
+    res.status(404).sendFile('./view/404.html', {root:__dirname});
+});
 
+module.exports = router;
