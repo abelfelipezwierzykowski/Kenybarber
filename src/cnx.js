@@ -1,7 +1,7 @@
-const pg = require('pg')
-const { prototype } = require('pg/lib/type-overrides')
+const Pool = require('pg')
 
-const client = new pg.Client({
+
+const pool = new Pool({
     user:'postgres',
     host:'localhost',
     database:'aula_andrea',
@@ -9,4 +9,4 @@ const client = new pg.Client({
     port:5432
 
 })
-module.exports=client
+module.exports=pool
