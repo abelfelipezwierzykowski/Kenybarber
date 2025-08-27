@@ -2,3 +2,4 @@
     e.preventDefault(); // evita envio real
     window.location.href = '/inicio'; // redireciona
   });
+
