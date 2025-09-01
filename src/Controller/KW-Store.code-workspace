@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../../../KW-Store"
+		},
+		{
+			"name": "Kenybarber",
+			"path": "../.."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Kenybarber"
+	}
+}
