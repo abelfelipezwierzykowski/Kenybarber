@@ -7,14 +7,24 @@
   },
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "Sistema de gerenciamento de agendamentos para barbearias, desenvolvido como projeto acadêmico com foco em performance, segurança e boas práticas de banco de dados utilizando PostgreSQL.",
   "dependencies": {
     "express": "^5.1.0",
+    "mysql2": "^3.14.4",
     "pg": "^8.16.3",
     "pg-hstore": "^2.3.4",
     "sequelize": "^6.37.7"
   },
   "devDependencies": {
     "nodemon": "^3.1.10"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gustavovieira29/Kenybarber.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/Gustavovieira29/Kenybarber/issues"
+  },
+  "homepage": "https://github.com/Gustavovieira29/Kenybarber#readme"
 }
