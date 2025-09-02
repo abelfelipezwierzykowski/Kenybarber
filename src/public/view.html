@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dados da View</title>
+</head>
+<body>
+  <h1>Dados da View do Banco</h1>
+  <table border="1" id="tabela">
+    <thead>
+      <tr id="cabecalho"></tr>
+    </thead>
+    <tbody id="corpo"></tbody>
+  </table>
+
+  <script>
+    async function carregarDados() {
+      const resposta = await fetch('/api/view-dados');
+      const dados = await resposta.json();
+
+      const cabecalho = document.getElementById('cabecalho');
+      const corpo = document.getElementById('corpo');
+
+      if (dados.length > 0) {
+        // Cria o cabeçalho
+        Object.keys(dados[0]).forEach(campo => {
+          const th = document.createElement('th');
+          th.textContent = campo;
+          cabecalho.appendChild(th);
+        });
+
+        // Preenche as linhas
+        dados.forEach(linha => {
+          const tr = document.createElement('tr');
+          Object.values(linha).forEach(valor => {
+            const td = document.createElement('td');
+            td.textContent = valor;
+            tr.appendChild(td);
+          });
+          corpo.appendChild(tr);
+        });
+      }
+    }
+
+    carregarDados();
+  </script>
+</body>
+</html>
